@@ -7,11 +7,10 @@ set( PACKAGE_VERSION "0.0.1" )
 set( CMAKE_CXX_STANDARD 11 )
 set( CMAKE_CXX_STANDARD_REQUIRED ON )
 
-set(ENVS_INCLUDE /home/caishanli/.conda/envs/pytorch/include)
-set(ENVS_LIB /home/caishanli/.conda/envs/pytorch/lib)
-set(ENVS_EXECUTABLE /home/caishanli/.conda/envs/pytorch/bin)
+set(ENVS_INCLUDE /opt/conda/include)
+set(ENVS_LIB /opt/conda/lib)
+set(ENVS_EXECUTABLE /opt/conda/bin)
 
-find_package (Python3 COMPONENTS Interpreter Development)
 find_package(ncnn CONFIG REQUIRED)
 find_package(pybind11 REQUIRED)
 
